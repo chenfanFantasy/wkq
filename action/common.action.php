@@ -76,7 +76,7 @@ class CommonAct {
     	}
     	foreach(self::$errMsg as $code=>$msg){
     		if($code!="200"){
-    			return array($k,$v);
+    			return array($code=>$msg);
     		}
     		$lastMsg['errCode']	= $code;
     		$lastMsg['errMsg']	= $msg;

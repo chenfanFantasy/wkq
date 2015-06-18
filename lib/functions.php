@@ -269,4 +269,27 @@ function hump2underline($hname) {
 			array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"), array("_a", "_b", "_c", "_d", "_e", "_f", "_g", "_h", "_i", "_j", "_k", "_l", "_m", "_n", "_o", "_p", "_q", "_r", "_s", "_t", "_u", "_v", "_w", "_x", "_y", "_z"), $hname);
 }
 
+//增加CURL方式的post提交数据方法
+function curlPostData($url,$data,&$httpCode,$header=array(),&$errCode=0,&$errMsg=''){
+	$url 	= preg_replace( '/(?:^[\'"]+|[\'"\/]+$)/', '', $url );
+	$hander = curl_init();
+	curl_setopt($hander,CURLOPT_URL,$url);
+	curl_setopt($hander,CURLOPT_HEADER,0);
+	curl_setopt($hander,CURLOPT_HTTPHEADER,$header);
+	curl_setopt($hander,CURLOPT_FOLLOWLOCATION,1);
+	curl_setopt($hander,CURLOPT_SSL_VERIFYPEER,0);
+	curl_setopt($hander,CURLOPT_POST, 1);
+	curl_setopt($hander,CURLOPT_POSTFIELDS, $data);
+	curl_setopt($hander,CURLOPT_RETURNTRANSFER,true);//以数据流的方式返回数据,当为false是直接显示出来
+	curl_setopt($hander,CURLOPT_TIMEOUT,60);
+	$cnt	= 0;
+	while($cnt < 3 && ($result=curl_exec($hander))===FALSE) $cnt++;
+	$httpCode		= curl_getinfo($hander, CURLINFO_HTTP_CODE);
+	if(curl_errno($hander)){
+		$errCode	= curl_errno($hander);
+		$errMsg		= curl_error($hander);
+	}
+	curl_close($hander);
+	return $result;
+}
 ?>
