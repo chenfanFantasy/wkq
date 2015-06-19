@@ -8,6 +8,12 @@ class UserView extends BaseView {
 		$res	= A('User')->act_getInfo();
 		print_r($res);
 	}
+	
+	//加载用户注册页面
+	public function view_userRegist(){
+		$this->smarty->assign("title","威客圈注册");
+		$this->smarty->display("userRegist.htm");
+	}
 }
 
 ?>
