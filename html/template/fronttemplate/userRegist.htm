@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>{$title}</title>
+	<meta name="keywords" content="威客圈">
+		<meta name="description" content="威客圈">
+			<link href="./css/css.css" rel="stylesheet" type="text/css">
+				<script type="text/javascript" src="./js/jquery-1.7.2.js"></script>
+				<script type="text/javascript" src=". /js/iepngfix_tilebg.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="top1">
+			<div class="logo">
+				<a href="http://wkquan.valsun.cn/index.php" title="威客圈"></a>
+			</div>
+		</div>
+	</div>
+	<!--/header-->
+	<div class="middle mid-980">
+		<div class="newtask reg">
+			<div class="tit">
+				<div class="tit1">
+					<strong>刷客注册</strong>
+				</div>
+			</div>
+			<div class="info dl-go">
+				<div class="clr-10"></div>
+
+				<form name="Form1" method="post" action="./威客圈注册_files/威客圈注册.html" id="Form1">
+					<h3></h3>
+					<dl>
+						<dt>登录名：</dt>
+						<dd>
+							<input name="txtLoginName" type="text" id="txtLoginName"
+								class="txt-box box-2-2" maxlength="25"><b class="red">*</b><span>登录名会展示在页面顶部,商家不要填写掌柜名</span>
+						</dd>
+					</dl>
+					<div class="clr-15"></div>
+					<dl>
+						<dt>真实姓名：</dt>
+						<dd>
+							<input name="txtRealyName" type="text" id="txtRealyName"
+								class="txt-box box-2-2" maxlength="25"><b class="red">*</b><span>务必填写真实姓名.提现时银行卡姓名要与注册时一致,否则平台有权拒绝提现</span>
+						</dd>
+					</dl>
+					<div class="clr-15"></div>
+					<dl>
+						<dt>登录密码：</dt>
+						<dd>
+							<input name="txtPassword" type="password" maxlength="25"
+								id="txtPassword" class="txt-box box-2-2" value=""><b
+								class="red">*</b><span>请输入6-16位英文字母和数字</span>
+						</dd>
+					</dl>
+					<dl>
+						<div class="clr-15"></div>
+						<dt>确认登录密码：</dt>
+						<dd>
+							<input name="txtRePassword" type="password" maxlength="25"
+								id="txtRePassword" class="txt-box box-2-2" value=""><b
+								class="red">*</b><span>请再次输入密码，两次输入的密码必须一致</span>
+						</dd>
+					</dl>
+					<dl>
+						<div class="clr-15"></div>
+						<dt>威客圈安全密码：</dt>
+						<dd>
+							<input name="txtPayPwd" type="password" maxlength="25"
+								id="txtPayPwd" class="txt-box box-2-2" value=""><b
+								class="red">*</b><span>请输入6-16位英文字母和数字</span>
+						</dd>
+					</dl>
+					<dl>
+						<div class="clr-15"></div>
+						<dt>确认威客圈安全密码：</dt>
+						<dd>
+							<input name="txtRePayPwd" type="password" maxlength="25"
+								id="txtRePayPwd" class="txt-box box-2-2" value=""><b
+								class="red">*</b><span>请再次输入密码，两次输入的密码必须一致</span>
+						</dd>
+					</dl>
+					<div class="clr-15"></div>
+					<dl>
+						<dt>QQ号码：</dt>
+						<dd>
+							<input name="txtQQ" type="text" id="txtQQ"
+								class="txt-box box-2-2" maxlength="12"
+								onkeyup="this.value=this.value.replace(/[^\d]/g,&#39;&#39;) "
+								onafterpaste="this.value=this.value.replace(/[^\d]/g,&#39;&#39;)"><b
+								class="red">*</b><span>请填写您的QQ号码，以便和你及时交流</span>
+						</dd>
+					</dl>
+					<dl>
+						<div class="clr-15"></div>
+
+						<dl>
+							<dt>Email：</dt>
+							<dd>
+								<input name="txtEmail" type="text" id="txtEmail"
+									class="txt-box box-2-2" maxlength="25"><b class="red">*</b><span>请填写您的常用邮箱，我们通过此邮箱告知您的账户信息、订单状态等</span>
+							</dd>
+						</dl>
+						<div class="clr-15"></div>
+						<dt>会员类型：</dt>
+						<table id="rbMemberType" border="0">
+							<tbody>
+								<tr>
+									<td><input id="rbMemberType_0" type="radio"
+										name="rbMemberType" value="1" checked="checked"><label
+											for="rbMemberType_0">刷客</label></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="clr-15"></div>
+						<dt>推荐人：</dt>
+						<dd>
+							<input name="txtRecommend" type="text" id="txtRecommend"
+								class="txt-box box-2-1" style="width: 100px" maxlength="25"><b>-</b><span>
+									必须填写推荐人帐号</span>
+						</dd>
+					</dl>
+					<dl class="dl1">
+						<div class="clr-15"></div>
+						<dt>验证码：</dt>
+						<dd>
+							<input name="txtCode" type="text" id="txtCode"
+								class="txt-box box-2-1" maxlength="4"><a
+								href="http://www.wkquan.com/MemberRegist.aspx"><img
+									src="./code_num.php" id="imge" width="76"
+									height="32"></a><a id="change"
+								href="http://wkquan.valsun.cn/index.php">换一张</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>&nbsp;</dt>
+						<dd>
+							<span class="anniu"> <a onclick="return Register();"
+								id="btnRegists" href="javascript:__doPostBack('btnRegists','')"
+								style="display: inline-block; width: 58px;">确认提交</a>
+							</span><span style="line-height: 38px;" class="p-l-10"><a
+								href="http://wkquan.valsun.cn/index.php" class="blue">已有账号，点击登录！</a></span>
+						</dd>
+					</dl>
+				</form>
+				<div class="clr-10" style="height: 145px;"></div>
+			</div>
+		</div>
+		<!--/newtask-->
+	</div>
+	<!--/middle task_info-->
+	<div id="footer"></div>
+	<!--/footer-->
+</body>
+</html>

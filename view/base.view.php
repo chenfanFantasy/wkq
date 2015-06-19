@@ -22,7 +22,7 @@ class BaseView {
 		####################  smarty初始化 start ####################
 		require_once(WEB_PATH . 'lib/template/smarty/Smarty.class.php');
 		$this->smarty = new Smarty;
-		$this->smarty->template_dir = WEB_PATH . 'html/template/fonttemplate' . DIRECTORY_SEPARATOR; //模板文件目录
+		$this->smarty->template_dir = WEB_PATH . 'html/template/fronttemplate' . DIRECTORY_SEPARATOR; //模板文件目录
 		$this->smarty->compile_dir = WEB_PATH . 'smarty/templates_c' . DIRECTORY_SEPARATOR; //编译后文件目录
 		$this->smarty->config_dir = WEB_PATH . 'smarty/configs' . DIRECTORY_SEPARATOR; //配置文件目录
 		$this->smarty->cache_dir = WEB_PATH . 'smarty/cache' . DIRECTORY_SEPARATOR; //缓存文件目录
