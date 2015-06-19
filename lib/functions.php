@@ -292,4 +292,27 @@ function curlPostData($url,$data,&$httpCode,$header=array(),&$errCode=0,&$errMsg
 	curl_close($hander);
 	return $result;
 }
+
+//增加CURL方式的get提交数据方法
+function curlGetData($url,$data,&$httpCode,$header=array(),&$errCode=0,&$errMsg=''){
+	$url 	= preg_replace( '/(?:^[\'"]+|[\'"\/]+$)/', '', $url);
+	$hander = curl_init();
+	curl_setopt($hander,CURLOPT_URL,$url);
+	curl_setopt($hander,CURLOPT_HEADER,0);
+	curl_setopt($hander,CURLOPT_HTTPHEADER,$header);
+	curl_setopt($hander,CURLOPT_FOLLOWLOCATION,true);
+	curl_setopt($hander,CURLOPT_SSL_VERIFYPEER,0);
+	curl_setopt($hander, CURLOPT_AUTOREFERER, true);
+	curl_setopt($hander,CURLOPT_RETURNTRANSFER,true);//以数据流的方式返回数据,当为false是直接显示出来
+	curl_setopt($hander,CURLOPT_TIMEOUT,60);
+	$cnt	= 0;
+	while($cnt < 3 && ($result=curl_exec($hander))===FALSE) $cnt++;
+	$httpCode		= curl_getinfo($hander, CURLINFO_HTTP_CODE);
+	if(curl_errno($hander)){
+		$errCode	= curl_errno($hander);
+		$errMsg		= curl_error($hander);
+	}
+	curl_close($hander);
+	return $result;
+}
 ?>
