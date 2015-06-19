@@ -1,0 +1,238 @@
+.screen_div {
+	width: 100%;
+	height: 360px;
+	background: url("../images/screen.jpg") no-repeat scroll center center transparent;
+}
+
+.propertyinfo_div {
+	position: relative;
+	top: 50px;
+	left: 860px;
+	width: 300px;
+	height: 235px;
+	border: 2px solid #5CA7F5;
+	background-color: #FFFFFF;
+}
+
+.propertyinfo_table {
+	position: relative;
+	top: 20px;
+	left: 30px;
+}
+
+.propertyinfo_title_td {
+	font-size: 14px;
+	font-weight: bold;
+	color: #666666;
+	text-align: right;
+	height: 40px;
+}
+
+.propertyinfo_value_td {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FF0000;	
+}
+
+.leftbar_div {
+	float: left;
+	margin: 50px 0px 10px 0px;
+	width: 484px;
+	height: 308px;
+}
+
+.leftbar_div div {
+	width: 232px;
+	height: 67px;
+	background-color: blue;
+	float: left;
+	margin: 5px;
+	font-size: 14px;
+}
+
+.leftbar_div .div1 {
+	background: url("../images/indexicon.png") no-repeat scroll 26px -78px #5CA7F5;
+	font-size: 24px;	
+}
+
+.leftbar_div .div2 {
+	background: url("../images/indexicon.png") no-repeat scroll 28px -157px #8BD450;
+	font-size: 24px;	
+}
+
+.leftbar_div .div3 {
+	background: url("../images/tx.png") no-repeat scroll 15px 0px transparent;
+}
+
+.leftbar_div .div4 {
+	background: url("../images/tx.png") no-repeat scroll 15px -75px transparent;
+}
+
+.leftbar_div .div5 {
+	background: url("../images/tx.png") no-repeat scroll 15px -150px transparent;	
+}
+
+.leftbar_div .div6 {
+	background: url("../images/tx.png") no-repeat scroll 15px -225px transparent;	
+}
+
+.leftbar_div .div7 {
+	background: url("../images/tx.png") no-repeat scroll 15px -300px transparent;	
+}
+
+.leftbar_div .div8 {
+	background: url("../images/tx.png") no-repeat scroll 15px -375px transparent;	
+}
+
+.leftbar_div .div1 a {
+	color: #FFFFFF;
+}
+
+.leftbar_div .div2 a {
+	color: #FFFFFF;
+}
+
+.leftbar_div div a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #666666;
+	line-height: 67px;
+	text-indent: 90px;
+}
+
+.announcement_div {
+	float: right;
+	width: 460px;
+	height: 330px;
+	margin: 10px 0px;
+}
+
+.announcement_list_ul {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	top: 0px;
+	left: 0px;
+}
+
+.announcement_list_ul li {
+	float: left;
+	display: inline;
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+}
+
+.announcement_list_ul li .title_span {
+	float: left;
+	margin-left: 15px;
+	font-weight: bold;
+}
+
+.announcement_list_ul li .title_span a {
+	color: #666666;
+}
+
+.announcement_list_ul li .time_span {
+	float: right;
+}
+
+.process_div {
+	float: left;
+	width: 100%;
+	height: 173px;
+	background-color: #DDEEFF;
+	margin: 10px 0px;
+}
+
+.process_title_div {
+	position: relative;
+	top: 20px;
+	left: 20px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.process_info_div {
+	position: relative;
+	top: 40px;
+	left: 50px;	
+	width: 900px;
+	height: 95px;
+}
+
+.process_info_ul {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	top: 0px;
+	left: 0px;
+}
+
+.process_info_ul li {
+	float: left;
+	display: inline;
+	height: 95px;
+	margin: 0px 9px;
+	text-align: center;	
+}
+
+.process_info_ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #666666;
+}
+
+.process_info_ul li div {
+	height: 1px;
+	width: 80px;
+}
+
+.process_info_ul li a:hover {
+	color: #70A0F2;
+}
+
+.process_info_ul li span {
+	position: relative;
+	top: 75px;
+}
+
+.process_info_ul .li1 {
+	background: url("../images/sjlck.png") no-repeat scroll 0px 0px transparent;
+}
+
+.process_info_ul .li2 {
+	background: url("../images/sjlck.png") no-repeat scroll 0px -99px transparent;
+}
+
+.process_info_ul .li3 {
+	background: url("../images/sjlck.png") no-repeat scroll 8px -198px transparent;
+}
+
+.process_info_ul .li4 {
+	background: url("../images/sjlck.png") no-repeat scroll 0px -306px transparent;
+}
+
+.process_info_ul .li5 {
+	background: url("../images/sjlck.png") no-repeat scroll 0px -405px transparent;
+}
+
+.process_arrow_li {
+	background: url("../images/ico-pic1.png") no-repeat scroll center 6px transparent;
+}
+
+.task_div {
+	float: left;
+	width: 100%;
+	margin: 10px 0px;	
+}
+
+.promote_div {
+	float: left;
+	width: 980px;
+	height: 80px;
+	background: url("../images/banner-index-floor1.jpg");
+	margin: 10px 0px;
+}

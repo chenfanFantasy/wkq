@@ -1,0 +1,23 @@
+.status_bar_div {
+	position: relative;
+	width: 100%;
+	height: 30px;
+	float: left;
+}
+
+.bar_div a {
+	line-height: 30px;
+	padding: 0px 10px;
+}
+
+.search_div {
+	position: absolute;
+	top: 5px;
+	right: 0px;
+}
+
+.pagebar_outer_div {
+	margin-top: 20px;
+	width: 100%;
+	float: left;
+}

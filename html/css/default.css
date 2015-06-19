@@ -1,0 +1,317 @@
+body {
+	font: 12px/1.6 Tahoma;
+	color: #666666;
+}
+
+a {
+	text-decoration: none;
+}
+
+.outer_div {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+.header_div {
+	width: 100%;
+	height: 120px;
+	float: left;
+	color: #FFFFFF;
+}
+
+.header_top_div {
+	position: relative;
+	width: 100%;
+	height: 72px;
+	float: left;
+	background-color: #038CE9;
+}
+
+.header_bottom_div {
+	width: 100%;
+	height: 48px;
+	float: left;
+	background-color: #0866C6;
+}
+
+.header_inside_div {
+	margin: 0 auto;
+	width: 1000px;
+	height: 100%;
+}
+
+.logo_div {
+	position: relative;
+	top: 13px;
+	left: 2px;	
+	width: 130px;
+	height: 46px;
+	background: url("../images/logo.jpg") no-repeat scroll right center transparent;
+}
+
+.banner_div {
+	position: relative;
+	top: -40px;
+	left: 160px;
+	width: 530px;
+	height: 60px;
+	background: url("../images/mkq.jpg") no-repeat scroll right center transparent;
+}
+
+.loginstatus_div {
+	float: right;
+	width: 124px;
+	height: 100%;
+	margin-right: 10px;
+	overflow: hidden;
+}
+
+.loginstatus_ul {
+	margin: 0px;
+	padding: 0px;
+	height: 100px;
+	width: 100%;
+	font-size: 12px;
+}
+
+.loginstatus_ul li {
+	float: left;
+	display: inline;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	padding: 1px;
+	border: #246DBA 0px solid;
+	border-top-color: #3C89DC;
+	cursor: pointer;
+}
+
+.loginstatus_ul li a {
+	height: 100%;
+	display: block;
+	text-align: center;
+}
+
+.loginstatus_ul .loginstatus_first_li {
+	height: 70px;
+	line-height: 70px;
+}
+
+.loginuser_div {
+	float: right;
+	width: 124px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.nav_ul {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+	font-size: 14px;
+}
+
+.nav_ul li {
+	float: left;
+	display: inline;
+	height: 100%;
+	line-height: 48px;	
+}
+
+.nav_ul li a {
+	color: #FFFFFF;
+	padding: 0px 23px;
+	display: block;
+}
+
+.nav_ul .chosen_li {
+	background-color: #0753A3;
+}
+
+.nav_ul .spread_li {
+	float: right;
+	background: url("../images/indexicon.png") no-repeat scroll 17px -232px #86CE4B;
+	width: 126px;
+	text-indent: 24px;
+}
+
+.page_div {
+	width: 100%;
+	float: left;
+}
+
+.main_div {
+	margin: 0 auto;
+	padding-top: 10px;
+	width: 1000px;
+	height: 100px;
+}
+
+.footer_div {
+	float: left;
+	width: 100%;
+	height: 100px;
+	margin-top: 50px;
+	background-color: #E9E9E9;
+}
+
+
+/* 以下是通用列表div样式 */
+.list_title_div {
+	float: left;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 2px solid #D3D3D3;
+}
+
+.list_title_span a {
+	display: block;
+	color: #666666;
+	float: left;
+	padding: 0px 5px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.list_title_span .list_current_a {
+	font-weight: bold;
+	cursor: default;
+	border-bottom: 2px solid #308CEA;
+	background: url("../images/pic_tit001.gif") no-repeat scroll center bottom transparent;
+}
+
+.list_title_span .list_chosen_a {
+	font-weight: bold;
+	border-bottom: 2px solid #308CEA;
+	background: url("../images/pic_tit001.gif") no-repeat scroll center bottom transparent;
+}
+
+.list_title_span {
+	font-size: 14px;
+	float: left;
+}
+
+.list_more_span {
+	float: right;
+}
+
+.list_more_span a {
+	color: #5CA7F5;
+}
+
+.list_inner_div {
+	float: left;
+	width: 100%;
+	margin-top: 8px;
+}
+
+.list_inner_div table {
+	width: 100%;
+}
+
+.list_inner_div table tr {
+	height: 27px;
+}
+
+.list_inner_div table td {
+	border-bottom: 1px solid #E1E1E1;
+}
+
+.list_inner_div table .boldSpan {
+	font-weight: bold;
+}
+
+.list_inner_div table .redSpan {
+	color: red;
+}
+
+.list_inner_div table .orangeSpan {
+	color: #FF5500;
+}
+
+.list_inner_div table .redBoldSpan {
+	font-weight: bold;
+	color: red;	
+}
+
+
+/* 以下是按钮条div样式 */
+.bar_div {
+	width: 100%;
+	height: 100%;
+}
+
+.bar_div a {
+	display: block;
+	float: left;
+	padding: 0px 5px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.bar_div .bar_current_a {
+	height: 100%;
+	color: #FFFFFF;
+	background-color: #5CA7F5;
+	cursor: default;
+}
+
+.bar_div .bar_chosen_a {
+	height: 100%;
+	color: #FFFFFF;
+	background-color: #5CA7F5;
+}
+
+
+/* 以下是翻页条div样式 */
+.pagebar_div {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+
+.pagebar_div .pagebar_inner_div {
+	margin: 0 auto;
+}
+
+.pagebar_inner_div a {
+ 	padding: 2px 5px;
+}
+
+.pagebar_inner_div .pagebar_normal_a {
+	border: 1px solid #DEDEDE;
+ 	color: #3461E8;
+	cursor: pointer;
+}
+
+.pagebar_inner_div .pagebar_normal_a:hover {
+	border: 1px solid #000000;
+	background-color: #0061DE;
+ 	color: #FFFFFF;
+}
+
+.pagebar_inner_div .pagebar_unlink_a {
+	border-width: 0px;
+ 	color: #AAAAAA;
+	cursor: default;
+}
+
+.pagebar_inner_div .pagebar_current_a {
+	border: 1px solid #5CA7F5;
+	color: #FF0084;
+	font-weight: bold;
+}
+
+.pagebar_div .pagebar_static_div {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: #999999;
+	font-size: 14px;
+}

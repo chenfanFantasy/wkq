@@ -1,0 +1,72 @@
+{include file="header.htm"}
+<link href="./css/acceptTaskList.css" rel="stylesheet" type="text/css" />
+<div class="main_div">
+	<div class="status_bar_div">
+		<div class="bar_div">
+			<a class="bar_current_a">全部</a>
+			<a>等待审核</a>
+			<a>等待支付</a>
+			<a>等待发货</a>
+			<a>到期收获与好评(已发货)</a>
+			<a>等待完成</a>
+			<a>已完成</a>
+		</div>
+		<div class="search_div">
+			<select>
+				<option>任务编号</option>
+				<option>订单编号</option>
+				<option>买号</option>
+				<option>掌柜号</option>
+			</select>：
+			<input type="text" style="width:120px;"></input>
+			<input type="button" value="搜索" style="width:40px;"></input>
+			<input type="button" value="刷新" style="width:40px;"></input>
+		</div>
+	</div>
+	<div class="list_inner_div">
+		<table>
+			<tr>
+				<td width="15%"><span class="boldSpan">任务编号</span></td>
+				<td width="6%"><span class="boldSpan">买号</span></td>
+				<td width="10%"><span class="boldSpan">商品地址</span></td>
+				<td width="6%"><span class="boldSpan">任务价格</span></td>
+				<td width="6%"><span class="boldSpan">发布点</span></td>
+				<td width="6%"><span class="boldSpan">接收时间</span></td>
+				<td width="10%"><span class="boldSpan">发布人信息</span></td>
+				<td width="10%"><span class="boldSpan">任务状态</span></td>
+				<td width="6%"><span class="boldSpan">操作</span></td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+		</table>
+	</div>
+	<div class="pagebar_outer_div">
+		<div class="pagebar_div">
+			<div class="pagebar_inner_div">
+				<a class="pagebar_unlink_a">&lt;上一页</a>
+				<a class="pagebar_current_a">1</a>
+				<a class="pagebar_normal_a">2</a>
+				<a class="pagebar_normal_a">3</a>
+				<a class="pagebar_normal_a">4</a>
+				<a class="pagebar_normal_a">5</a>
+				<a class="pagebar_normal_a">6</a>
+				<a class="pagebar_normal_a">7</a>
+				<a class="pagebar_normal_a">8</a>
+				<a class="pagebar_unlink_a">...</a>
+				<a class="pagebar_normal_a">15</a>
+				<a class="pagebar_normal_a">下一页&gt;</a>
+			</div>
+			<div class="pagebar_static_div">共300条数据</div>
+		</div>
+	</div>
+</div>
+{include file="footer.htm"}
